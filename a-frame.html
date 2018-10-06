@@ -12,6 +12,24 @@
   <a-scene background="color: #ECECEC">
     <a-box position="-4 2.8 0" rotation="0 60 0" color="#470301" shadow>
     </a-box>
+    <a-box position="0 0 -40" width="60" height="10" color="#470301" shadow>
+    </a-box>
+    <a-sphere color="blue" radius="0.4" position="-25 7 -40"></a-sphere>
+    <a-cylinder color="blue" height="2" radius="0.4" position="-25 6 -40"></a-cylinder>
+    <a-cylinder color="blue" height="1" radius="0.18" position="-25 7.8 -40"></a-cylinder>
+
+    <a-sphere color="blue" radius="0.4" position="-20 7 -40"></a-sphere>
+    <a-cylinder color="blue" height="2" radius="0.4" position="-20 6 -40"></a-cylinder>
+    <a-cylinder color="blue" height="1" radius="0.18" position="-20 7.8 -40"></a-cylinder>
+
+    <a-sphere color="green" radius="0.4" position="0 7 -40"></a-sphere>
+    <a-cylinder color="green" height="2" radius="0.4" position="0 6 -40"></a-cylinder>
+    <a-cylinder color="green" height="1" radius="0.18" position="0 7.8 -40"></a-cylinder>
+
+
+    //Text
+    <a-text value="Enjoy the night before it ends" height="8" width="50" position="20 6 -5" rotation="0 -90 0" color="black"></a-text>
+
     <a-light type="directional" color="#FFF" intensity="1" position="2 -1 -2">
     </a-light>
     <a-light type="ambient" color="#FFF">
@@ -20,14 +38,37 @@
     <a-plane rotation="-90 0 0" position="2 0 -2" color="#030136" width="60" height="65" depth="2"></a-plane>
     <a-plane rotation="0 -90 0" position="30 -1 0" color="#aaa" width="60" height="50" depth="2"></a-plane>
     <a-plane rotation="0 -90 0" position="30 -1 0" color="#aaa" width="60" height="50" depth="2"></a-plane>
+
+    //Drinks
+    <a-sphere color="green" radius="0.4" position="3.5 4 -10"></a-sphere>
+    <a-cylinder color="green" height="2" radius="0.4" position="3.5 3 -10"></a-cylinder>
+    <a-cylinder color="green" height="1" radius="0.18" position="3.5 4.8 -10"></a-cylinder>
+    //Pole
+    <a-assets>
+      <img id="my-image" src="moz.png">
+    </a-assets>
+
+    <a-image src="#my-image" position="23 14 8.5" height="5" width="10" ></a-image>
+
+    //tree
+
+    <a-assets>
+      <img id="tree" src="1.png">
+    </a-assets>
+
+    <a-image src="#tree" position="-15 12.5 20" height="20" width="10" rotation="0 90 0" ></a-image>
+    <a-cylinder color="white" height="10" radius="0.2" position="-15 0 20"></a-cylinder>
+
     <a-cylinder color="crimson" height="2" radius="0.2" position="-4 4 0"></a-cylinder>
     <a-cylinder color="white" height="4" radius="0.2" position="1 0 -6"></a-cylinder>
     <a-cylinder color="white" height="4" radius="0.2" position="6 0 -6"></a-cylinder>
+    //Table
     <a-plane rotation="-90 0 0" position="3.5 2 -10" color="#515052" width="10" height="10" depth="3"></a-plane>
-    <a-cylinder color="black" height="2" radius="0.2" position="25 10 -7"></a-cylinder>
-    <a-cylinder color="black" height="2" radius="0.2" position="25.5 10.5 -7" rotation="-50 0 0"></a-cylinder>
-    <a-cylinder color="black" height="2" radius="0.2" position="26.7 10.5 -7" rotation="50 0 0"></a-cylinder>
-    <a-cylinder color="black" height="2" radius="0.2" position="27.3 10 -7"></a-cylinder>
+
+    <a-cylinder color="black" height="7" radius="0.2" position="24.3 10 1.8"></a-cylinder>
+    <a-cylinder color="black" height="7" radius="0.2" position="24 11 5" rotation="-50 0 0"></a-cylinder>
+    <a-cylinder color="black" height="7" radius="0.2" position="24 11 10.3" rotation="50 0 0"></a-cylinder>
+    <a-cylinder color="black" height="7" radius="0.2" position="24 10 13"></a-cylinder>
     <a-entity camera="active: true" look-controls wasd-controls position="5 10 20" data-aframe-default-camera></a-entity>
   </a-scene>
   <script>
@@ -38,7 +79,7 @@
     cylinder.setAttribute('radius', '0.7');
     cylinder.setAttribute('position', '-4 6 0');
     scene.appendChild(cylinder);
-    </script>
+  </script>
 </body>
 
 </html>
